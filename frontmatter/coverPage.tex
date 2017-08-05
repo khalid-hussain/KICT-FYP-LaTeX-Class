@@ -1,0 +1,41 @@
+% !TeX program = lualatex
+\documentclass[a4paper]{memoir}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% Inserting images
+\usepackage{graphicx}
+
+% Margins
+\setulmarginsandblock{3cm}{6cm}{*} % Upper-Lower margins
+\setlrmarginsandblock{3.8cm}{2.5cm}{*} % Left-Right margins
+\checkandfixthelayout
+
+\usepackage{xspace}
+
+\input{../kict-fyp-config}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{LARGE}
+\begin{center}
+\includegraphics[scale=0.5]{../images/iium}\\[24pt]
+
+\textbf{\MakeTextUppercase{Kulliyyah of Information and Communication Technology}\\[24pt]}
+\textbf{\MakeTextUppercase{Department of \myDepartment}\\[24pt]}
+
+\MakeTextUppercase{\myTitle}\\
+\vfill
+BY\\
+\vfill
+\MakeTextUppercase{\myName}\\
+\vfill
+\MakeTextUppercase{\myUni}\\
+\vfill
+\myYear
+\end{center}
+\end{LARGE}
+
+\end{document}
