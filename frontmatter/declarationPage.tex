@@ -1,0 +1,75 @@
+% !TeX program = lualatex
+\documentclass[a4paper]{memoir}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% Inserting images
+\usepackage{graphicx}
+
+% Margins
+\setulmarginsandblock{1in}{1in}{*} % Upper-Lower margins
+\setlrmarginsandblock{1.5in}{1in}{*} % Left-Right margins
+\checkandfixthelayout
+
+\usepackage{xspace}
+
+\input{../kict-fyp-config}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{LARGE}
+\begin{center}
+
+{\fontsize{16pt}{18pt}\selectfont
+  \textbf{\myTitle}
+}\\[24pt]
+
+{\fontsize{14pt}{16pt}\selectfont
+  by
+
+  \vfill
+  \myName\\[10pt]
+  \MakeTextUppercase{\myMatric}\\
+
+  \vfill
+
+  A project paper submitted to the\\[12pt]
+  Department of \myDepartment\\
+  \myKulliyyah\\[12pt]
+
+
+  in partial fulfillment of the requirement for the\\[12pt]
+  Bachelor of \mySubject\\[24pt]
+
+  Approved by the Examining Committee:\\[48pt]
+
+  \makebox[3.5in]{\hrulefill}\\
+  \mySupervisor, Project Supervisor\\[32pt]
+
+  \makebox[3.5in]{\hrulefill}\\
+  \myName, Member\\[32pt]
+
+  \ifx\myPartner\undefined
+  \else
+  \makebox[3.5in]{\hrulefill}\\
+  \myPartner, Member\\[32pt]
+  \fi
+
+  \ifx\myPartnerTwo\undefined
+  \else
+  \makebox[3.5in]{\hrulefill}\\
+  \myPartnerTwo, Member\\[32pt]
+  \fi
+
+  \vfill
+
+  \myUni\\[24pt]
+  \myTime\\
+  \mySemester\\
+}
+\end{center}
+\end{LARGE}
+
+\end{document}

@@ -1,0 +1,41 @@
+% !TeX program = lualatex
+\documentclass[a4paper]{memoir}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% Inserting images
+\usepackage{graphicx}
+
+% Margins
+\setulmarginsandblock{1in}{1in}{*} % Upper-Lower margins
+\setlrmarginsandblock{1.5in}{1in}{*} % Left-Right margins
+\checkandfixthelayout
+
+\usepackage{xspace}
+\usepackage{lipsum}
+
+\input{../kict-fyp-config}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+  {\fontsize{16pt}{16pt}\selectfont
+    \textbf{\MakeTextUppercase{Acknowledgment}}\\[48pt]
+  }
+\end{center}
+
+Praise and thanks to Allāh first and foremost whose blessing enabled me to accomplish this project.
+
+I wish to express my deepest appreciation to my supervisor, \mySupervisor for relentless guidance, helpful suggestion, close supervision and moral encouragement to complete this task.
+
+Special thanks to my parents and to all the teachers I had. Thank you to Dr. Ahmad Faizul, Dr. Farouq, Mr. Zeki, Dr. Husnayati and Mr. Adli.
+
+My sincerely thanks to all those whom directly or indirectly help me to
+complete this project.
+
+\lipsum[1-2]
+
+\end{document}
