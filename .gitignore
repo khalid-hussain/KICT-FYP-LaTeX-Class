@@ -1,5 +1,6 @@
 
 *.pdf
+content-from-pandoc-source.tex
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
