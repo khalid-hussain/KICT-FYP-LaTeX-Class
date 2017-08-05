@@ -1,17 +1,31 @@
 % !TeX program = lualatex
 \documentclass{kict-fyp}
 
+\usepackage{pdfpages}
+
 \usepackage{lipsum}
+
+%******************************
+%      References
+%*************************
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{references.bib}
+
+\input{kict-fyp-config}
 
 \begin{document}
 
 \frontmatter
+\includepdf{frontmatter/coverPage}
+\includepdf{frontmatter/titlePage}
 \tableofcontents*
 
 \mainmatter
-\chapter{Introduction}
-\lipsum[2-10]
+\input{content-from-pandoc-source}
 
 \backmatter
-
+\printbibliography[title={REFERENCES}]
 \end{document}
