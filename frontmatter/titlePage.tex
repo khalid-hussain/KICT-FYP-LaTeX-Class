@@ -1,0 +1,67 @@
+% !TeX program = lualatex
+\documentclass[a4paper]{memoir}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% Inserting images
+\usepackage{graphicx}
+
+% Margins
+\setulmarginsandblock{1in}{1in}{*} % Upper-Lower margins
+\setlrmarginsandblock{3.8cm}{2.5cm}{*} % Left-Right margins
+\checkandfixthelayout
+
+\usepackage{xspace}
+
+\input{../kict-fyp-config}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{LARGE}
+\begin{center}
+\includegraphics[scale=0.5]{../images/iium}\\[24pt]
+
+{\fontsize{18pt}{20pt}\selectfont
+  \textbf{\MakeTextUppercase{Final Year Project Report}\\[48pt]}
+}
+
+{\fontsize{16pt}{18pt}\selectfont
+  \myTitle\\[48pt]\
+}
+
+\vfill
+
+{\fontsize{14pt}{16pt}\selectfont
+  by
+
+  \vfill
+  \myName\\[10pt]
+  \MakeTextUppercase{\myMatric}\\
+
+  \vfill
+
+  Supervised by\\[10pt]
+  \mySupervisor\\
+
+  \vfill
+  In partial fulfillment of the requirement for the\\
+  Bachelor of \myDepartment\\
+
+  \vfill
+
+  Department of \myDepartment\\
+  \myKulliyah\\
+  \myUni\\
+
+  \vfill
+
+  \vfil
+  \myTime\\
+  \mySemester\\
+}
+\end{center}
+\end{LARGE}
+
+\end{document}
