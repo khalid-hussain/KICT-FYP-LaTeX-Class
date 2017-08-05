@@ -23,9 +23,18 @@
 \includepdf{frontmatter/titlePage}
 \includepdf{frontmatter/declarationPage}
 \tableofcontents*
+\newpage
+\listoftables*
+\newpage
+\listoffigures*
+\newpage
 
 \mainmatter
 \input{content-from-pandoc-source}
+
+\begin{appendices}
+  \input{appendices/appendix1} %
+\end{appendices}
 
 \backmatter
 \printbibliography[title={REFERENCES}]
