@@ -10,7 +10,7 @@ A LaTeX document class for KICT's (IIUM) FYP report.
 # Usage
 
 1. Change the variables found in `kict-fyp-config.tex` according to personal requirements.
-2. Compile frontmatter using `compile.sh` found in the `frontmatter` folder. This only needs to be done once unless you make changes to front matter variables as found in `kict-fyp-config.tex`.
+2. Compile frontmatter using `make frontmatter`. Only needs to be done once unless variables in `kict-fyp-config.tex` are changed.
 3. Compile the report using `make`.
 
 ## Makefile
