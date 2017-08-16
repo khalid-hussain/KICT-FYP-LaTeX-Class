@@ -4,6 +4,9 @@ FYP-CLS=kict-fyp.cls.tex
 FYP-PDF=fyp_report.pdf
 PANDOC-CONTENT=content-from-pandoc-source.tex
 PANDOC-SOURCE=pandoc-source.md
+TO-CLEAN=*.aux *.lof *.lot *.toc *.log *.out *.synctex.gz *.blg *.run.xml *.bcf *.bbl \
+frontmatter/*.aux frontmatter/*.lof frontmatter/*.lot frontmatter/*.toc frontmatter/*.log frontmatter/*.out frontmatter/*.synctex.gz frontmatter/*.bbl frontmatter/*.blg \
+workspace/*.log workspace/*.aux workspace/*.synctex.gz workspace/*.toc
 
 default: pdf
 
