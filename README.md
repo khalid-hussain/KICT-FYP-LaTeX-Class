@@ -5,7 +5,7 @@ A LaTeX document class for KICT's (IIUM) FYP report.
 # Dependencies
 
 - [Pandoc]
-- LuaLaTeX (The report requires the use of the Arial font)
+- LuaLaTeX (The report uses Arial). I suggest installing [TexLive].
 
 # Usage
 
@@ -49,14 +49,14 @@ If you have an all-in-one solution for this complication, please _do_ share.
 
 # To Do
 
-1. Add front matter compilation to the `makefile`.
-2. Add files to be cleaned to the `makefile`.
+
 
 # License
 
 The IIUM logo and related IIUM graphics are property of IIUM, Malaysia.
 
 [Pandoc]: https://github.com/jgm/pandoc/releases
+[TexLive]: https://www.tug.org/texlive/acquire.html
 [JabRef]: http://www.jabref.org/
 [Sublime Text]: https://www.sublimetext.com/
 [Atom]: https://atom.io/
