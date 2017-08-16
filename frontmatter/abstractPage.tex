@@ -1,0 +1,30 @@
+% !TeX program = lualatex
+\documentclass[a4paper]{memoir}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{arial.ttf}
+
+% Inserting images
+\usepackage{graphicx}
+
+% Margins
+\setulmarginsandblock{2in}{2in}{*} % Upper-Lower margins
+\setlrmarginsandblock{1.5in}{1in}{*} % Left-Right margins
+\checkandfixthelayout
+
+\usepackage{xspace}
+
+\input{../kict-fyp-config}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\Large{\MakeTextUppercase{Abstract}}\\[36pt]
+%{\fontsize{14pt}{0pt}\selectfont
+%  \MakeTextUppercase{Abstract}
+%}\\[48pt]
+\end{center}
+
+\noindent\myAbstract
+\end{document}
