@@ -34,6 +34,19 @@ For example:
 }
 ```
 
+## Appendices
+
+I have included a sample appendix file `appendix1.tex` under the folder `appendices`.
+Appendices, depending on the report could constitute anything.
+They could be contents of a source code file, a copy of an agreement, a flowchart, a table of research findings, etc.
+Thus, user intervention is required.
+
+If an appendix consists of simple text, you can replicate `appendix1.tex` (i.e. `appendix2.tex` and so on) and then import it in the appendices section in `fyp_report.tex`.
+
+If your appendix is exotic in nature, I suggest exporting the content as a `pdf` file and then adding commands for the `pdfpages` package in the appendices section in `fyp_report.tex`.
+
+If you have an all-in-one solution for this complication, please _do_ share.
+
 # To Do
 
 1. Add front matter compilation to the `makefile`.
