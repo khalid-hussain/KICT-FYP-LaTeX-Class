@@ -56,7 +56,9 @@ If you have an all-in-one solution for this complication, please _do_ share.
 
 # To Do
 
-
+- Increase line spacing in front matter.
+  - Acknowledgment
+  - Abstract
 
 # License
 
