@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iiumthesis}[2017/08/05 IIUM Thesis class]
+\ProvidesClass{kict-fyp}[2017/08/05 IIUM Thesis class]
 \LoadClass[12pt,a4paper,oneside]{memoir}
 % \RequirePackage[T1]{fontenc}
 \RequirePackage{fontspec}
@@ -77,8 +77,8 @@ BoldItalicFont = *bi]
 %\renewcommand{\chapternumberline}[1]{\chaptername\ #1: }
 \renewcommand{\cftchapterdotsep}{\cftdotsep}% Chapters should use dots in ToC
 \abstractintoc % Show abstract in ToC
-\renewcommand*{\cftchaptername}{\MakeUppercase{\chaptername}\space}
-\renewcommand*{\cftchapteraftersnum}{:\space}
+% \renewcommand*{\cftchaptername}{\MakeUppercase{\chaptername}\space}
+% \renewcommand*{\cftchapteraftersnum}{:\space}
 
 % Single spacing in front matter
 \setlength{\cftbeforechapterskip}{1pt} % Taken from Moaaz's attempt
@@ -125,6 +125,7 @@ BoldItalicFont = *bi]
 \renewcommand*\chapnamefont{\large\bfseries}
 \renewcommand*\chapnumfont{\large\bfseries\centering}
 \renewcommand*\chaptitlefont{\SingleSpacing\large\bfseries\centering}
-\renewcommand{\printchaptername}{{\chapnamefont\MakeUppercase{\chaptername}}}
+% \renewcommand{\printchaptername}{{\chapnamefont\MakeUppercase{\chaptername}}}
+\renewcommand{\printchaptername}{{\chapnamefont\MakeUppercase{\@chapapp}}}
 \renewcommand*{\afterchapternum}{\vskip\midchapskip}
 \renewcommand*{\printchaptertitle}[1]{{\chaptitlefont\MakeUppercase{#1}\par}}

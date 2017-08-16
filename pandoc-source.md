@@ -14,7 +14,7 @@ Lorem ipsum dolor sit ‘amet’[@barber2012bitter], consectetur adipisicing eli
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem officiis quo molestiae, quis iure sunt ea dolorem, nobis dolores, ut quibusdam nesciunt vel doloremque, a dolore fugit delectus cum debitis.
 
-![Shaykh Rabee's Library](images/library){width=100%}
+![Shaykh Rabee's Library](images/library.jpg){width=100%}
 
 ## Constraints
 
@@ -31,10 +31,5 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ducimus mai
 | Something   | Else       | Over here                      |
 | Value       | Second     | Third                          |
 | 5.0 cm      | Javascript | \LaTeX                         |
-
-
-
-
-
 
 # References
