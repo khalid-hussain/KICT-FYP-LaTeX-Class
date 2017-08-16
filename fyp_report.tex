@@ -18,10 +18,23 @@
 
 \begin{document}
 
+%******************************
 \frontmatter
+%*************************
+\pdfbookmark{Cover}{coverPage}
 \includepdf{frontmatter/coverPage}
+
+\pdfbookmark{Title}{titlePage}
 \includepdf{frontmatter/titlePage}
+
+\pdfbookmark{Declaration}{declarationPage}
 \includepdf{frontmatter/declarationPage}
+
+\pdfbookmark{Acknowledgment}{acknowledgmentPage}
+\includepdf{frontmatter/acknowledgmentPage}
+
+\pdfbookmark{Abstract}{abstractPage}
+\includepdf{frontmatter/abstractPage}
 \tableofcontents*
 \newpage
 \listoftables*
@@ -29,13 +42,17 @@
 \listoffigures*
 \newpage
 
+%******************************
 \mainmatter
+%*************************
 \input{content-from-pandoc-source}
 
 \begin{appendices}
   \input{appendices/appendix1} %
 \end{appendices}
 
+%******************************
 \backmatter
-\printbibliography[title={REFERENCES}]
+%*************************
+\printbibliography[title={References}]
 \end{document}
