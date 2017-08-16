@@ -13,6 +13,13 @@ A LaTeX document class for KICT's (IIUM) FYP report.
 2. Compile frontmatter using `compile.sh` found in the `frontmatter` folder. This only needs to be done once unless you make changes to front matter variables as found in `kict-fyp-config.tex`.
 3. Compile the report using `make`.
 
+## Makefile
+
+1. `make frontmatter` - Generates `pdf` files for all the front matter.
+2. `make` - Generates `fyp_report.pdf`. Requires `pandoc-source.md` and all the front matter.
+3. `make content-from-pandoc` - Generates `content-from-pandoc-source.tex`. Use for debugging.
+4. `make clean` - Cleans the directory of auxiliary files as a result of LaTeX compilation.
+
 ## Bibliography
 
 The bibliography file is `references.bib`.
