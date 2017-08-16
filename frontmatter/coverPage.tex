@@ -3,7 +3,13 @@
 
 % Fonts
 \usepackage{fontspec}
-\setmainfont{Arial}
+%https://tex.stackexchange.com/questions/313766/fontspec-with-lualatex-using-arial-narrow-while-xelatex-is-correct
+\setmainfont{arial}[%Need such long loading because of luaotfload issue
+Extension = .ttf,
+UprightFont = *,
+BoldFont = *bd,
+ItalicFont = *i,
+BoldItalicFont = *bi]
 
 % Inserting images
 \usepackage{graphicx}

@@ -4,7 +4,13 @@
 % \RequirePackage[T1]{fontenc}
 \RequirePackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-\setmainfont{Arial}
+%https://tex.stackexchange.com/questions/313766/fontspec-with-lualatex-using-arial-narrow-while-xelatex-is-correct
+\setmainfont{arial}[%Need such long loading because of luaotfload issue
+Extension = .ttf,
+UprightFont = *,
+BoldFont = *bd,
+ItalicFont = *i,
+BoldItalicFont = *bi]
 \setmonofont{Courier New}
 
 %******************************
