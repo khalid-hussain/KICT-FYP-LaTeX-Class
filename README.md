@@ -18,7 +18,7 @@ A LaTeX document class for KICT's (IIUM) FYP report.
 1. `make frontmatter` - Generates `pdf` files for all the front matter.
 2. `make` - Generates `fyp_report.pdf`. Requires `pandoc-source.md` and all the front matter.
 3. `make content-from-pandoc` - Generates `content-from-pandoc-source.tex`. Use for debugging.
-4. `make clean` - Cleans the directory of auxiliary files as a result of LaTeX compilation.
+4. `make clean` - Cleans auxiliary files created by LaTeX.
 
 ## Bibliography
 
@@ -56,7 +56,7 @@ If you have an all-in-one solution for this complication, please _do_ share.
 
 # To Do
 
-- Increase line spacing in front matter.
+- Increase line spacing and check paragraph indent size in front matter.
   - Acknowledgment
   - Abstract
 
