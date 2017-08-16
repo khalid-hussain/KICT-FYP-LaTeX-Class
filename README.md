@@ -16,6 +16,7 @@ A LaTeX document class for KICT's (IIUM) FYP report.
 # To Do
 
 1. Add front matter compilation to the `makefile`.
+2. Add files to be cleaned to the `makefile`.
 
 # License
 
