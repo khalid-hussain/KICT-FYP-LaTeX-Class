@@ -19,7 +19,7 @@ frontmatter:
 	+$(MAKE) -C frontmatter
 
 content-from-pandoc:
-	pandoc -t latex -o $(PANDOC-CONTENT) --smart $(PANDOC-SOURCE) --top-level-division=chapter --biblatex
+	pandoc -t latex -o $(PANDOC-CONTENT) --smart $(PANDOC-SOURCE) --top-level-division=chapter --biblatex --listings
 
 pdf: $(FYP) content-from-pandoc
 	lualatex $(FYP)

@@ -3,7 +3,7 @@
 \LoadClass[12pt,a4paper,oneside]{memoir}
 % \RequirePackage[T1]{fontenc}
 \RequirePackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
 %https://tex.stackexchange.com/questions/313766/fontspec-with-lualatex-using-arial-narrow-while-xelatex-is-correct
 \setmainfont{arial}[%Need such long loading because of luaotfload issue
 Extension = .ttf,
@@ -11,7 +11,8 @@ UprightFont = *,
 BoldFont = *bd,
 ItalicFont = *i,
 BoldItalicFont = *bi]
-\setmonofont{Courier New}
+\RequirePackage{inconsolata}
+\setmonofont[StylisticSet={1,3}]{Inconsolatazi4} % shapely l, upright quotes
 
 %******************************
 %      Margins
@@ -53,6 +54,31 @@ BoldItalicFont = *bi]
   hidelinks=yes,
   pdfstartview=FitH
 ]{hyperref}
+% For Source Code
+\RequirePackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  numbers=left,
+  frame=leftline,
+  keywordstyle=\color[rgb]{0.13,0.29,0.53}\bfseries,
+  stringstyle=\color[rgb]{0.31,0.60,0.02},
+  commentstyle=\color[rgb]{0.56,0.35,0.01}\itshape,
+  numberstyle=\footnotesize\ttfamily,
+  stepnumber=1,
+  numbersep=10pt,
+  backgroundcolor=\color[RGB]{248,248,248},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=true,
+  breakautoindent=true,
+  escapeinside={\%*}{*)},
+  linewidth=\textwidth,
+  basewidth=0.5em,
+}
 
 %******************************
 %      Table of con../fig../tab..

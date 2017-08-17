@@ -20,6 +20,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem officiis quo mo
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui veniam vitae alias, esse facere atque aliquam quidem laudantium, veritatis facilis. Ducimus mollitia saepe ex odio natus ipsa similique qui maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus eum alias quidem sequi. Porro natus ut qui, ullam unde et inventore voluptatibus fuga ad laboriosam omnis perspiciatis laborum ex aliquam.
 
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  cout << "Salam Dunya!" << endl;
+  return 0;
+}
+```
+
 ### Scope
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ducimus maiores soluta numquam ipsum error assumenda nihil enim, architecto odio ea, officiis magni vero porro? Harum obcaecati neque quia voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto perspiciatis dolore, ipsum suscipit. Quod pariatur excepturi, officia adipisci unde aperiam. Eum, obcaecati, blanditiis. Dignissimos maiores laboriosam, provident, voluptas explicabo laudantium!
